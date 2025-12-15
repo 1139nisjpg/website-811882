@@ -58,6 +58,20 @@ a:active {
   padding: 40px;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .main-card {
   background: white;
   border-radius: 20px;
