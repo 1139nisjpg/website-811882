@@ -73,7 +73,7 @@ a:active {
 }
 
 .main-card {
-  background: white;
+  background: #f5f5f5;
   border-radius: 20px;
   padding: 40px;
   min-height: 500px;
@@ -110,14 +110,14 @@ a:active {
 }
 
 .schedule-table th {
-    background-color: #f4f4f4;
+    background-color: #eed5c4;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .day-header {
-    background-color: #fafafa;
+    background-color: #d7ccc8;
     font-weight: bold;
     vertical-align: top;
 }
@@ -172,7 +172,7 @@ a:active {
 }
 
 .side-card {
-  background: white;
+  background: #fcf2eb;
   padding: 20px;
   border-radius: 18px;
   text-align: center;
