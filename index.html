@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyResume | Home</title>
-  <link rel="stylesheet" href="homestyle.css">
+  <title>WeenTerest | Home</title>
+  <link rel="stylesheet" href="style.css">
   <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
 <style>
 body {
-    font-family: 'Anonymous Pro';font-size: 22px;
+    font-family: 'Anonymous Pro'; font-size:22px;
 }
 </style>
 </head>
@@ -16,24 +16,121 @@ body {
 
   <!-- Navigation Bar -->
   <header class="navbar">
-    <div class="logo">MyResume</div>
+    <div class="logo">
+	<img src="images/sitelogo.png" class="nav-logo"></div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Contact</a></li>
+	<li><a href="#gallery">Gallery</a></li>
+        <li class="dropdown-parent">
+	  <a href="#">Contact ▾</a>
+	  <ul class="dropdown-menu">
+           <li><a href="http://t.me/aween_n"><img src="images/telegram.ico" width="25px">  Telegram</a></li>
+           <li><a href="https://www.instagram.com/aween._.n?igsh=dWZqbDd5dWZtbHhu"><img src="images/instagram.png" width="20px">  Instagram</a></li>
+           <li><img src="images/email.png" width="20px">  1139nis@gmail.com</li>
+	  </ul>
+	</li>
       </ul>
     </nav>
   </header>
 
-  <!-- Card/Grid Layout Section -->
-  <section class="card-grid">
-    <div class="card"><a href="aboutme.html" class="side-card">About Me</a></div>
-    <div class="card"><a href="education.html" class="side-card">Education</a></div>
-    <div class="card"><a href="portfolio.html" class="side-card">Portfolio</a></div>
-    <div class="card"><a href="hobbies.html" class="side-card">Hobbies</a></div>
-    <div class="card"><a href="misc.html" class="side-card">Miscellaneous</a></div>
-    <div class="card"><a href="media.html" class="side-card">Media</a></div>
+<section class="card-grid">
+     <a href="aboutme.html" class="card">
+        <span>About Me</span>
+        <img src="images/icon1.png" class="card-icon">
+     </a>
+
+     <a href="education.html" class="card">
+        <span>Education</span>
+        <img src="images/icon2.png" class="card-icon">
+     </a>
+
+     <a href="portfolio.html" class="card">
+        <span>Portfolio</span>
+        <img src="images/icon3.png" class="card-icon">
+     </a>
+
+     <a href="hobbies.html" class="card">
+        <span>Hobbies</span>
+        <img src="images/icon4.png" class="card-icon">
+     </a>
+
+     <a href="misc.html" class="card">
+        <span>Miscellaneous</span>
+        <img src="images/icon5.png" class="card-icon">
+     </a>
   </section>
+
+
+<section class="main-card gallery-card" id="gallery">
+  <h1>Gallery</h1>
+  
+  <div class="carousel-container">
+    <button class="nav-arrow prev" onclick="moveGallery(-1)">&#10094;</button>
+    
+    <div class="gallery-track" id="galleryTrack">
+        <img src="images/abme.jpg" class="gallery-thumb">
+        <img src="https://picsum.photos/id/1016/300/300" class="gallery-thumb">
+        <img src="https://picsum.photos/id/1018/300/300" class="gallery-thumb">
+        <img src="https://picsum.photos/id/1019/300/300" class="gallery-thumb">
+        <img src="https://picsum.photos/id/1020/300/300" class="gallery-thumb">
+        <img src="https://picsum.photos/id/1021/300/300" class="gallery-thumb">
+    </div>
+
+    <button class="nav-arrow next" onclick="moveGallery(1)">&#10095;</button>
+  </div>
+  <div style="text-align:center; margin-top:10px; color: #ccc;">
+      <span>&#8226;</span> <span>&#8226;</span> <span>&#8226;</span>
+  </div>
+</section>
+
+<div id="myModal" class="modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+<script>
+    // --- Part 1: Carousel Navigation ---
+    function moveGallery(direction) {
+        const track = document.getElementById('galleryTrack');
+        // Scroll by the width of an image + gap (approx 215px)
+        const scrollAmount = 215; 
+        track.scrollLeft += (direction * scrollAmount);
+    }
+
+
+    // --- Part 2: Modal (Lightbox) Functionality ---
+    // Get the modal components
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    
+    // Get all thumbnail images
+    var images = document.getElementsByClassName("gallery-thumb");
+
+    // Loop through all thumbnails and add click listeners
+    for (var i = 0; i < images.length; i++) {
+        images[i].onclick = function(){
+            modal.style.display = "flex"; // Show the modal
+            modalImg.src = this.src;      // Set the big image src to the clicked image src
+        }
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close-modal")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+
+    // Also close if clicking outside the image background
+    modal.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body> ```
 
 <footer class="footer">
   Powered by GitHub

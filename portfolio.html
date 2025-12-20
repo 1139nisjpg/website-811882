@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyResume | Portfolio</title>
-  <link rel="stylesheet" href="mystyle.css">
-<link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+  <title>WeenTerest | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
 <style>
 body {
     font-family: 'Anonymous Pro';font-size: 22px;
@@ -15,11 +15,20 @@ body {
 <body>
 
   <header class="navbar">
-    <div class="logo">MyResume</div>
+    <div class="logo">
+	<img src="images/sitelogo.png" class="nav-logo"></div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Contact</a></li>
+	<li><a href="#gallery">Gallery</a></li>
+        <li class="dropdown-parent">
+	  <a href="#">Contact ▾</a>
+	  <ul class="dropdown-menu">
+           <li><a href="http://t.me/aween_n"><img src="images/telegram.ico" width="25px">  Telegram</a></li>
+           <li><a href="https://www.instagram.com/aween._.n?igsh=dWZqbDd5dWZtbHhu"><img src="images/instagram.png" width="20px">  Instagram</a></li>
+           <li><img src="images/email.png" width="20px">  1139nis@gmail.com</li>
+	  </ul>
+	</li>
       </ul>
     </nav>
   </header>
@@ -43,7 +52,6 @@ body {
     <a href="portfolio.html" class="side-card active">Portfolio</a>
     <a href="hobbies.html" class="side-card">Hobbies</a>
     <a href="misc.html" class="side-card">Miscellaneous</a>
-    <a href="media.html" class="side-card">Media</a>
   </aside>
 
 </main>

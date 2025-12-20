@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyResume | Education</title>
-  <link rel="stylesheet" href="mystyle.css">                         
+  <title>WeenTerest | Education</title>
+  <link rel="stylesheet" href="style.css">                         
   <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
 <style>
 body {
@@ -15,11 +15,20 @@ body {
 <body>
 
   <header class="navbar">
-    <div class="logo">MyResume</div>
+    <div class="logo">
+	<img src="images/sitelogo.png" class="nav-logo"></div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Contact</a></li>
+	<li><a href="#gallery">Gallery</a></li>
+        <li class="dropdown-parent">
+	  <a href="#">Contact ▾</a>
+	  <ul class="dropdown-menu">
+           <li><a href="http://t.me/aween_n"><img src="images/telegram.ico" width="25px">  Telegram</a></li>
+           <li><a href="https://www.instagram.com/aween._.n?igsh=dWZqbDd5dWZtbHhu"><img src="images/instagram.png" width="20px">  Instagram</a></li>
+           <li><img src="images/email.png" width="20px">  1139nis@gmail.com</li>
+	  </ul>
+	</li>
       </ul>
     </nav>
   </header>
@@ -29,6 +38,33 @@ body {
   <!-- MAIN CONTENT CARD -->
   <section class="main-card">
     <h1>Education</h1>
+    <h4 align="center"><u>Academic Background</u></h4><br>
+    <div class="school-container">
+    <a href="https://maps.app.goo.gl/fa9Jq1jcC2JMaZXG8" target="_blank">
+    <img src="images/skam.png" width="60" margin-left="auto" margin-right="auto"></a>
+	<div class="school-info-card">
+        <h3>SK Ayer Molek, Melaka</h3>
+	<p>Primary Education • 2012 - 2017</p>
+	</div>
+    </div><br>
+    <div class="school-container">
+    <a href="https://maps.app.goo.gl/6sgymmLr6nGuUrRv6" target="_blank">
+    <img src="images/shrdz.png" width="60" margin-left="auto" margin-right="auto"></a>
+	<div class="school-info-card">
+        <h3>SMKA Sharifah Rodziah, Melaka</h3>
+	<p>Secondary Education • 2018 - 2022/2023</p>
+	</div>
+    </div><br>
+    <div class="school-container">
+    <a href="https://maps.app.goo.gl/cJ1GdggBqXjaj9Vy5" target="_blank">
+    <img src="images/uitm.png" width="40" margin-left="auto" margin-right="auto"></a>
+	<div class="school-info-card">
+        <h3>Universiti Teknologi MARA Kampus Segamat, Johor</h3>
+	<p>Tertiary Education • 2023 - current</p>
+	</div>
+    </div>
+
+    <br>
     <h4 align="center"><u>Current Class Schedule</u></h4><br>
     <table class="schedule-table">
         <thead>
@@ -88,34 +124,7 @@ body {
             <td>-</td>
           </tr>
         </tbody>
-      </table><br>
-	
-    <h4 align="center"><u>Education Background</u></h4><br>
-    <div class="school-container">
-    <a href="https://maps.app.goo.gl/fa9Jq1jcC2JMaZXG8" target="_blank">
-    <img src="images/skam.png" width="60" margin-left="auto" margin-right="auto"></a>
-	<div class="school-info-card">
-        <h3>SK Ayer Molek, Melaka</h3>
-	<p>Primary Education • 2012 - 2017</p>
-	</div>
-    </div><br>
-    <div class="school-container">
-    <a href="https://maps.app.goo.gl/6sgymmLr6nGuUrRv6" target="_blank">
-    <img src="images/shrdz.png" width="60" margin-left="auto" margin-right="auto"></a>
-	<div class="school-info-card">
-        <h3>SMKA Sharifah Rodziah, Melaka</h3>
-	<p>Secondary Education • 2018 - 2022/2023</p>
-	</div>
-    </div><br>
-    <div class="school-container">
-    <a href="https://maps.app.goo.gl/cJ1GdggBqXjaj9Vy5" target="_blank">
-    <img src="images/uitm.png" width="40" margin-left="auto" margin-right="auto"></a>
-	<div class="school-info-card">
-        <h3>Universiti Teknologi MARA Kampus Segamat, Johor</h3>
-	<p>Tertiary Education • 2023 - current</p>
-	</div>
-    </div>
-
+      </table>
   </section>
 
   <!-- SIDE NAVIGATION CARDS -->
@@ -125,7 +134,6 @@ body {
     <a href="portfolio.html" class="side-card">Portfolio</a>
     <a href="hobbies.html" class="side-card">Hobbies</a>
     <a href="misc.html" class="side-card">Miscellaneous</a>
-    <a href="media.html" class="side-card">Media</a>
   </aside>
 
 </main>
