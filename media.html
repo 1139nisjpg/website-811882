@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WeenTerest | Miscellaneous</title>
+  <title>WeenTerest | Media</title>
   <link rel="stylesheet" href="style.css">                         
   <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
 <style>
@@ -15,14 +15,14 @@ body {
 <body>
 
   <header class="navbar">
-    <div class="logo">
-	<img src="images/sitelogo.png" class="nav-logo"></div>
+    <div class="logo"><a href="index.html">
+      <img src="images/sitelogo.png" class="nav-logo"></a></div>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-	<li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html">&#x1F3E0; Home</a></li>
+	<li><a href="index.html#gallery">&#x1F4F7; Gallery</a></li>
         <li class="dropdown-parent">
-	  <a href="#">Contact ▾</a>
+	  <a href="#">&#x1F4DE; Contact ▾</a>
 	  <ul class="dropdown-menu">
            <li><a href="http://t.me/aween_n"><img src="images/telegram.ico" width="25px">  Telegram</a></li>
            <li><a href="https://www.instagram.com/aween._.n?igsh=dWZqbDd5dWZtbHhu"><img src="images/instagram.png" width="20px">  Instagram</a></li>
@@ -37,7 +37,7 @@ body {
 
   <!-- MAIN CONTENT CARD -->
   <section class="main-card">
-    <h1>Miscellaneous</h1>
+    <h1>Media</h1>
     <p>
       Write your introduction here.  
       You can talk about your background, goals, interests, and what defines you.
@@ -50,14 +50,21 @@ body {
     <a href="education.html" class="side-card">Education</a>
     <a href="portfolio.html" class="side-card">Portfolio</a>
     <a href="hobbies.html" class="side-card">Hobbies</a>
-    <a href="misc.html" class="side-card active">Miscellaneous</a>
+    <a href="media.html" class="side-card active">Media</a>
+  <aside class="side-clock">
+    <h3>Current Time</h3>
+        <div id="digital-clock">00:00:00</div>
+        <div id="date-display">Loading...</div>
+  </aside>
   </aside>
 
 </main>
 
-<footer class="footer">
-  Powered by GitHub
+<footer class="footer"><a href="https://github.com/">
+  Powered by GitHub</a>
 </footer>
+
+<script src="clock.js"></script>
 
 </body>
 </html>

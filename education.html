@@ -12,17 +12,18 @@ body {
 }
 </style>
 </head>
+
 <body>
 
   <header class="navbar">
-    <div class="logo">
-	<img src="images/sitelogo.png" class="nav-logo"></div>
+    <div class="logo"><a href="index.html">
+      <img src="images/sitelogo.png" class="nav-logo"></a></div>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-	<li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html">&#x1F3E0; Home</a></li>
+	<li><a href="index.html#gallery">&#x1F4F7; Gallery</a></li>
         <li class="dropdown-parent">
-	  <a href="#">Contact ▾</a>
+	  <a href="#">&#x1F4DE; Contact ▾</a>
 	  <ul class="dropdown-menu">
            <li><a href="http://t.me/aween_n"><img src="images/telegram.ico" width="25px">  Telegram</a></li>
            <li><a href="https://www.instagram.com/aween._.n?igsh=dWZqbDd5dWZtbHhu"><img src="images/instagram.png" width="20px">  Instagram</a></li>
@@ -47,6 +48,7 @@ body {
 	<p>Primary Education • 2012 - 2017</p>
 	</div>
     </div><br>
+
     <div class="school-container">
     <a href="https://maps.app.goo.gl/6sgymmLr6nGuUrRv6" target="_blank">
     <img src="images/shrdz.png" width="60" margin-left="auto" margin-right="auto"></a>
@@ -55,6 +57,7 @@ body {
 	<p>Secondary Education • 2018 - 2022/2023</p>
 	</div>
     </div><br>
+
     <div class="school-container">
     <a href="https://maps.app.goo.gl/cJ1GdggBqXjaj9Vy5" target="_blank">
     <img src="images/uitm.png" width="40" margin-left="auto" margin-right="auto"></a>
@@ -133,14 +136,21 @@ body {
     <a href="education.html" class="side-card active">Education</a>
     <a href="portfolio.html" class="side-card">Portfolio</a>
     <a href="hobbies.html" class="side-card">Hobbies</a>
-    <a href="misc.html" class="side-card">Miscellaneous</a>
+    <a href="media.html" class="side-card">Media</a>
+  <aside class="side-clock">
+    <h3>Current Time</h3>
+        <div id="digital-clock">00:00:00</div>
+        <div id="date-display">Loading...</div>
+  </aside>
   </aside>
 
 </main>
 
-<footer class="footer">
-  Powered by GitHub
+<footer class="footer"><a href="https://github.com/">
+  Powered by GitHub</a>
 </footer>
+
+<script src="clock.js"></script>
 
 </body>
 </html>
