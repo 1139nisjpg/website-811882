@@ -148,7 +148,7 @@ a:active {
   justify-content: center;
   gap: 15px;
 
-  background: #fcf2eb;
+  background: #fcfceb;
   padding: 40px 40px;
   border-radius: 12px;
   border: 1px solid #ddd;
@@ -201,7 +201,7 @@ a:active {
 }
 
 .main-card {
-  background: #f5f5f5;
+  background: #fcf9f5;
   border-radius: 20px;
   padding: 40px;
   height: auto;
@@ -214,6 +214,7 @@ a:active {
 
 .profile-pic {
   display: block;
+  border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -300,7 +301,7 @@ a:active {
 }
 
 .side-card {
-  background: #fcf2eb;
+  background: #fcfceb;
   padding: 20px;
   border-radius: 18px;
   text-align: center;
