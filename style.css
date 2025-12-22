@@ -74,8 +74,10 @@ a:active {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: rgba(232, 202, 158, 0.8);
-  border-bottom: 1px solid #ddd;
+  background-color: rgba(232, 202, 158, 0.85);
+  border-bottom: 2px dashed #4a3d30;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .nav-logo {
@@ -256,7 +258,7 @@ a:active {
 
 .main-card {
   background: rgba(252, 249, 245, 0.85);
-  border: 3px dashed #423c34;
+  border: 3px double #423c34;
   border-radius: 20px;
   padding: 40px;
   height: auto;
@@ -505,6 +507,6 @@ a:active {
   text-align:center;
   padding:15px 0;
   font-size:0.9rem;
-  border-top: 1px solid #ddd;
+  border-top: 2px dashed #4a3d30;
   margin-top: auto;
 }
