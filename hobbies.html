@@ -39,10 +39,31 @@ body {
   <!-- MAIN CONTENT CARD -->
   <section class="main-card">
     <h1>Hobbies</h1>
-    <p>
-      Write your introduction here.  
-      You can talk about your background, goals, interests, and what defines you.
-    </p>
+    <section class="gallery-card" id="gallery">
+  <h2>Through the Lens 	&#x1F4F8;</h2>
+  
+  <div class="carousel-container">
+    <button class="nav-arrow prev" onclick="moveGallery(-1)">&#10094;</button>
+    
+    <div class="gallery-track" id="galleryTrack">
+        <img src="images/abme.jpg" class="gallery-thumb">
+        <img src="images/photo_2025-12-29_09-09-00.jpg" class="gallery-thumb">
+        <img src="images/photo_2025-12-29_09-09-02.jpg" class="gallery-thumb">
+        <img src="images/photo_2025-12-29_09-09-03.jpg" class="gallery-thumb">
+        <img src="images/photo_2025-12-29_09-09-04.jpg" class="gallery-thumb">
+        <img src="images/photo_2025-12-29_09-09-05.jpg" class="gallery-thumb">
+        <img src="images/photo_2025-12-29_09-09-06.jpg" class="gallery-thumb">
+        <img src="images/photo_2025-12-29_09-09-09.jpg" class="gallery-thumb">
+        <img src="images/photo_2025-12-29_09-09-15.jpg" class="gallery-thumb">
+    </div>
+
+    <button class="nav-arrow next" onclick="moveGallery(1)">&#10095;</button>
+  </div>
+  <div style="text-align:center; margin-top:10px; color: #ccc;">
+      <span>&#8226;</span> <span>&#8226;</span> <span>&#8226;</span>
+  </div>
+</section>
+
   </section>
 
   <!-- SIDE NAVIGATION CARDS -->
